@@ -14,7 +14,7 @@ public class socketManager : MonoBehaviour
         ws.Connect();
         ws.OnMessage += (sender, e) =>
         {
-            //  Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
+            //Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             Debug.Log("서버와 연결되었습니다.");
         };
         StartCoroutine("SockettoServer");
