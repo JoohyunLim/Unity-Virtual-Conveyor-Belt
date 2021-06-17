@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5C9EC8E1-0C5B-4DFC-3D35-68E273B137D2}</ProjectGuid>
+    <ProjectGuid>{43FB2B81-EFB8-9386-B6C6-BA197FB7BAB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -72,34 +72,34 @@
      <Compile Include="Assets\Scripts\UdpSocket.cs" />
      <None Include="Assets\Packages\WebSocketSharp-netstandard.1.0.1\lib\netstandard2.0\websocket-sharp.xml" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder.Editor">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Recorder.Base">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -303,10 +303,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Assets/Packages/WebSocketSharp-netstandard.1.0.1/lib/netstandard2.0/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Assets/Packages/WebSocketSharp-netstandard.1.0.1/lib/netstandard2.0/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/14Z980-GA50K/git/VirtualConveyorbelt/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/PackageCache/com.unity.analytics@3.2.3/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

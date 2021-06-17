@@ -54,11 +54,11 @@ public class InstantiateBottle : MonoBehaviour
         Cans.Add(Can_beer);
         Cans.Add(Can_fanta);
 
-        Plates.Add(Plate_glass);
+        Plates.Add(Plate_paper);
         Plates.Add(Plate_plastic);
         Plates.Add(Plate_metal);
         Plates.Add(Plate_wood);
-        Plates.Add(Plate_paper);
+        Plates.Add(Plate_glass);
 
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);

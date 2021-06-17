@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 114553391864940148}
   m_Layer: 0
   m_Name: PaperPlate
-  m_TagString: Untagged
+  m_TagString: paperplate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
