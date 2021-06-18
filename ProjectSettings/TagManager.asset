@@ -10,6 +10,7 @@ TagManager:
   - Bin2
   - Glassplate
   - paperplate
+  - plasticplate
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ public class Box : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "paperplate")
+        if(col.gameObject.tag == "Glassplate")
         {
             col.gameObject.transform.position = new Vector3(Random.Range(0.2f, 0.25f), transform.position.y, -1.68f);
         } else

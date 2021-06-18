@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Data : MonoBehaviour
 {
-    public string item = "PaperPlate"; //컨베이어벨트 종류
+    public string item = "GlassPlate"; //컨베이어벨트 종류
     public int uptime = 0; //컨베이어 가동 시간
     public static int inputTrash = 0; //배출되는 모든 쓰레기의 수 
     public static int recyclingTrash = 0; //재활용되는 쓰레기의 수

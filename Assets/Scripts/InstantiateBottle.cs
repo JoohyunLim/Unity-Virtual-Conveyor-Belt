@@ -41,7 +41,7 @@ public class InstantiateBottle : MonoBehaviour
     public static List<GameObject> Cans = new List<GameObject>(); //Can prefab들을 담은 리스트
     public static List<GameObject> Plates = new List<GameObject>(); //Plate prefab들을 담은 리스트
 
-    public static List<GameObject> Trash = new List<GameObject>();  //모든 쓰레기 prefab을 담은 리스트
+    //public static List<GameObject> Trash = new List<GameObject>();  //모든 쓰레기 prefab을 담은 리스트
    
 
 
@@ -54,12 +54,13 @@ public class InstantiateBottle : MonoBehaviour
         Cans.Add(Can_beer);
         Cans.Add(Can_fanta);
 
-        Plates.Add(Plate_paper);
+        Plates.Add(Plate_glass);
         Plates.Add(Plate_plastic);
+        Plates.Add(Plate_paper);
         Plates.Add(Plate_metal);
         Plates.Add(Plate_wood);
-        Plates.Add(Plate_glass);
-
+         
+        /*
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);
         Trash.Add(Can_pepsi);
@@ -74,22 +75,22 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Mug);
         Trash.Add(Plate_glass);
         Trash.Add(Plate_plastic);
-        Trash.Add(Plate_metal);
-        Trash.Add(Plate_wood);
-        Trash.Add(Plate_paper);
+        //Trash.Add(Plate_metal);
+        //Trash.Add(Plate_wood);
+        //Trash.Add(Plate_paper);
         Trash.Add(Book);
         Trash.Add(Spoon);
         Trash.Add(Chopsticks);
         Trash.Add(Cream);
         Trash.Add(Straw);
         Trash.Add(etc);
-
+        */
     }
 
     void Update()
     {
         Timer -= Time.deltaTime;
-        int trashIndex = Random.Range(0, 22); // Random.Range(0,gamobject 종류의 수)**
+     //   int trashIndex = Random.Range(0, 19); // Random.Range(0,gamobject 종류의 수)**
         float xpos = Random.Range(-0.2f, 0.2f);
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
@@ -157,7 +158,7 @@ public class InstantiateBottle : MonoBehaviour
                         break;
 
                     case 10:
-                        print("INPUT NEW PLATE!");
+                        print("INPUT NEW RANDOM PLATE!");
                         Instantiate(Plates[plateIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
@@ -180,10 +181,17 @@ public class InstantiateBottle : MonoBehaviour
                         print("INPUT NEW WINE GLASS!");
                         Instantiate(WineGlass, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
-
+                    case 18:
+                        print("INPUT NEW GLASS PLATE!");
+                        Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                        break;
+                    case 19:
+                        print("INPUT NEW PLASTIC PLATE!");
+                        Instantiate(Plates[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                        break;      
                     default:
                         print("INPUT NEW ETC!");
-                        Instantiate(Trash[20], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                        Instantiate(etc, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
                     
 
