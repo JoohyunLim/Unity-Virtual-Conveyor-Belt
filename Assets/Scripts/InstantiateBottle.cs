@@ -36,6 +36,7 @@ public class InstantiateBottle : MonoBehaviour
     public float Timer = 5;
     public static bool inputNew = false;
     public static int classNumber;
+    int inputNumber = 1;
 
     public static List<GameObject> Bottles = new List<GameObject>(); //Bottle prefab들을 담은 리스트
     public static List<GameObject> Cans = new List<GameObject>(); //Can prefab들을 담은 리스트
@@ -95,6 +96,7 @@ public class InstantiateBottle : MonoBehaviour
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
         int plateIndex = Random.Range(0, 5);
+         
         Quaternion qRotation = Quaternion.Euler(angle, angle, angle);
 
 
@@ -108,95 +110,96 @@ public class InstantiateBottle : MonoBehaviour
                 {
                                        
                     case 0:
-                        print("INPUT NEW BOOK!");
+                        print("INPUT #" +inputNumber+" NEW BOOK!");
                         Instantiate(Book, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 1:
-                        print("INPUT NEW BOTTLE!");
+                        print("INPUT #" + inputNumber + " NEW BOTTLE!");
                         Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 2:
-                        print("INPUT NEW BOWL!");
+                        print("INPUT #" + inputNumber + " NEW BOWL!");
                         Instantiate(Bowl, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 3:
-                        print("INPUT NEW CHOPSTICKS!");
+                        print("INPUT #" + inputNumber + " CHOPSTICKS!");
                         Instantiate(Chopsticks, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 4:
-                        print("INPUT NEW CREAM!");
+                        print("INPUT #" + inputNumber + " NEW CREAM!");
                         Instantiate(Cream, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 5:
-                        print("INPUT NEW STRAW!");
+                        print("INPUT #" + inputNumber + " NEW STRAW!");
                         Instantiate(Straw, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 6:
-                        print("INPUT NEW FORK!");
+                        print("INPUT #" + inputNumber + " NEW FORK!");
                         Instantiate(Fork, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 7:
-                        print("INPUT NEW KNIFE!");
+                        print("INPUT #" + inputNumber + " NEW KNIFE!");
                         Instantiate(Knife, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                      case 8:
-                        print("INPUT NEW MUG!");
+                        print("INPUT #" + inputNumber + " MUG!");
                         Instantiate(Mug, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 9:
-                        print("INPUT NEW PEN!");
+                        print("INPUT #" + inputNumber + " NEW PEN!");
                         Instantiate(Pen, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 10:
-                        print("INPUT NEW RANDOM PLATE!");
+                        print("INPUT #" + inputNumber + " NEW RANDOM PLATE!");
                         Instantiate(Plates[plateIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 11:
-                        print("INPUT NEW SCISSORS!");
+                        print("INPUT #" + inputNumber + " NEW SCISSORS!");
                         Instantiate(Scissors, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 12:
-                        print("INPUT NEW SPOON!");
+                        print("INPUT #" + inputNumber + " NEW SPOON!");
                         Instantiate(Spoon, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 13:
-                        print("INPUT NEW CAN!");
+                        print("INPUT #" + inputNumber + " NEW CAN!");
                         Instantiate(Cans[canIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 14:
-                        print("INPUT NEW WINE GLASS!");
+                        print("INPUT #" + inputNumber + " NEW WINE GLASS!");
                         Instantiate(WineGlass, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
                     case 18:
-                        print("INPUT NEW GLASS PLATE!");
+                        print("INPUT #" + inputNumber + " NEW GLASS PLATE!");
                         Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
                     case 19:
-                        print("INPUT NEW PLASTIC PLATE!");
+                        print("INPUT #" + inputNumber + " NEW PLASTIC PLATE!");
                         Instantiate(Plates[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;      
                     default:
-                        print("INPUT NEW ETC!");
+                        print("INPUT #" + inputNumber + " NEW ETC!");
                         Instantiate(etc, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
                     
 
                 }
                 inputNew = false;
+                inputNumber += 1;
                
             }
             else
