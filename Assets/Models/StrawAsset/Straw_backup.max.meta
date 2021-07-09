@@ -23,6 +23,7 @@ ModelImporter:
     4300000: Tube001
     4300002: Tube002
     4300004: Hose001
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
