@@ -42,7 +42,7 @@ public class InstantiateBottle : MonoBehaviour
     public static List<GameObject> Cans = new List<GameObject>(); //Can prefab들을 담은 리스트
     public static List<GameObject> Plates = new List<GameObject>(); //Plate prefab들을 담은 리스트
 
-    //public static List<GameObject> Trash = new List<GameObject>();  //모든 쓰레기 prefab을 담은 리스트
+    public static List<GameObject> Trash = new List<GameObject>();  //모든 쓰레기 prefab을 담은 리스트
    
 
 
@@ -61,7 +61,7 @@ public class InstantiateBottle : MonoBehaviour
         Plates.Add(Plate_metal);
         Plates.Add(Plate_wood);
          
-        /*
+        
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);
         Trash.Add(Can_pepsi);
@@ -85,13 +85,13 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Cream);
         Trash.Add(Straw);
         Trash.Add(etc);
-        */
+        
     }
 
     void Update()
     {
         Timer -= Time.deltaTime;
-     //   int trashIndex = Random.Range(0, 19); // Random.Range(0,gamobject 종류의 수)**
+        int trashIndex = Random.Range(0, 19); // Random.Range(0,gamobject 종류의 수)**
         float xpos = Random.Range(-0.2f, 0.2f);
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
@@ -204,10 +204,8 @@ public class InstantiateBottle : MonoBehaviour
             }
             else
             {
-                Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);
-
-               // Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
-                 
+                Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                //Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);      
 
             }
             Timer = 5f;
