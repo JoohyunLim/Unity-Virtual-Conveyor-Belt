@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using WebSocketSharp;
 using System.Collections;
+using System;
 
 
 public class socketManager : MonoBehaviour
@@ -11,6 +12,25 @@ public class socketManager : MonoBehaviour
     {
         Debug.Log("start");
         ws = new WebSocket("ws://3.37.86.169:8080");
+
+        try
+        {
+            ws.Connect();
+            ws.OnMessage += (sender, e) =>
+            { 
+                Debug.Log("서버와 연결되었습니다.");
+            };
+            StartCoroutine("SockettoServer");
+        }
+        catch (Exception err)
+        {
+            print(err.ToString());
+            print("FAILED TO CONNECT TO SERVER");
+            //+서버에게 오류메세지 전송
+        }
+ 
+
+        /*
         ws.Connect();
         ws.OnMessage += (sender, e) =>
         {
@@ -18,6 +38,7 @@ public class socketManager : MonoBehaviour
             Debug.Log("서버와 연결되었습니다.");
         };
         StartCoroutine("SockettoServer");
+        */
     }
     private void Update()
     {

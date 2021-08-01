@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Background\About\Scripts\Readme.cs" />
      <Compile Include="Assets\PhysicsConveyorAsset\Demo\Resources\Scripts\BoxMaterialPicker.cs" />
      <Compile Include="Assets\PhysicsConveyorAsset\Demo\Resources\Scripts\DemoCameraOrbit.cs" />
      <Compile Include="Assets\PhysicsConveyorAsset\Demo\Resources\Scripts\DemoManager.cs" />
@@ -101,6 +102,24 @@
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids.Editor">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

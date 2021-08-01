@@ -48,6 +48,8 @@ public class InstantiateBottle : MonoBehaviour
 
     void Start()
     {
+        print("컨베이어벨트 작동이 시작되었습니다.");
+        //서버로 시작 메세지 전송
         Bottles.Add(Bottle);
         Bottles.Add(Bottle_labeled);
 
@@ -204,8 +206,8 @@ public class InstantiateBottle : MonoBehaviour
             }
             else
             {
-                Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
-                //Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);      
+                //Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);      
 
             }
             Timer = 5f;
