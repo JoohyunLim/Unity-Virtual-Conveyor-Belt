@@ -104,6 +104,13 @@ public class InstantiateBottle : MonoBehaviour
          
         Quaternion qRotation = Quaternion.Euler(angle, angle, angle);
 
+        //error alarm test : 스페이스키 누르면 에러메세지 전송
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Data2.message = "컨베이어벨트에 오류가 발생했습니다.";
+            Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
+        }
+
 
         if (Timer <= 0f)
         {
