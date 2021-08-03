@@ -43,12 +43,15 @@ public class InstantiateBottle : MonoBehaviour
     public static List<GameObject> Plates = new List<GameObject>(); //Plate prefab들을 담은 리스트
 
     public static List<GameObject> Trash = new List<GameObject>();  //모든 쓰레기 prefab을 담은 리스트
-   
 
 
     void Start()
     {
-        print("컨베이어벨트 작동이 시작되었습니다.");
+        //앱 알림 #1: 컨베이어벨트 시작
+        Data2.message = "컨베이어벨트 작동이 시작되었습니다.";
+        Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
+
+
         //서버로 시작 메세지 전송
         Bottles.Add(Bottle);
         Bottles.Add(Bottle_labeled);
@@ -216,7 +219,6 @@ public class InstantiateBottle : MonoBehaviour
     
     public static void getClass(string classNum)
     {
-
         classNumber = int.Parse(classNum);
         inputNew = true;
     }

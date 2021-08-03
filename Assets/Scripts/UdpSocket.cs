@@ -85,8 +85,13 @@ public class UdpSocket : MonoBehaviour
             catch (Exception err)
             {
                 print(err.ToString());
-                print("컨베이어벨트가 중단되었습니다.");
-                //+서버에게 오류 메세지 전송
+                print("컨베이어벨트 작동이 중단되었습니다.");
+
+                //앱 알림 #2: 컨베이어벨트 중단 //문제: 유니티 작동이 멈춘 후기 때문에 서버로 데이터 보낼수 X
+                //Data2.message = "컨베이어벨트 작동이 중단되었습니다.";
+                //Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
+
+        
             }
         }
     }
