@@ -291,6 +291,12 @@
  <Reference Include="Unity.Locator">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
  </Reference>
+ <Reference Include="Assembly-CSharp-firstpass">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-CSharp-Editor-firstpass">
+ <HintPath>C:/Users/14Z980-GA50K/git/UnityVirtualConveyorBelt/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -719,12 +725,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{32C5F59B-2E80-F83B-7B28-343CB9EA3FB5}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{43FB2B81-EFB8-9386-B6C6-BA197FB7BAB7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{9B9446FF-FAF2-7421-EDC3-24C495BA82D8}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

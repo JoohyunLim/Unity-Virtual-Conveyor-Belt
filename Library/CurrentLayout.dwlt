@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 588
-  m_MinSize: {x: 681, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 17567
+  controlID: 288
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 992
     height: 588
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 17568
+  controlID: 289
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 992
     height: 314
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 17569
+  controlID: 290
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,9 +383,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 16c7fdff
-      m_LastClickedID: -145642
-      m_ExpandedIDs: 70c5fdffe4c6fdff04c7fdff4ac9fdffc4e0fdff6c08fefff41ffeff7c20feff9e20feffb422feff1028feff3228feff482afeffd831fefffa31feff0632feff7432feff9632feffa232feff8e33feffb233feffc835feff123cfeff363cfeff4c3efeff2e50feff1467feff207ffeff76b6feffdcfbffff92300100b69b0200ac8f030062900300f29e030054a103008ca303005e7c0400d87e0400989c0500d4470600
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: dcfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -552,20 +552,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/trash
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Prefabs/trash
+  - Assets/Scenes
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\14Z980-GA50K\git\UnityVirtualConveyorBelt
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 947}
-    m_SelectedIDs: 82100000
-    m_LastClickedID: 4226
-    m_ExpandedIDs: 00000000f80f0000f21000003012000076120000ec12000028130000ae13000020140000ec1400002615000094150000a8150000a6160000aa160000ac160000ba16000084180000861800000619000038190000b0190000721a0000f81a0000201b0000781b0000121c000076590000785900007a5900007c5900007e59000080590000825900008459000086590000885900008a5900008c5900008e5900002e6400006a640000086500003065000000ca9a3b
+    scrollPos: {x: 0, y: 963}
+    m_SelectedIDs: 14250000
+    m_LastClickedID: 9492
+    m_ExpandedIDs: 00000000d0110000da13000024160000301600009816000054170000d2170000d0180000d8180000741900009e1a0000021b00009c1b0000ce1b0000ee1d0000f21d0000f41d00000c1e0000ba200000bc20000086210000c62100006022000076230000b6230000ac240000f6240000b025000036260000d8260000886500008a6500008c6500008e65000090650000926500009465000096650000986500009a6500009c6500009e650000a065000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,7 +593,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f80f0000f21000003012000076120000ec12000028130000ae13000020140000ec1400002615000094150000a8150000a6160000aa160000ac160000ba16000084180000861800000619000038190000b0190000721a0000f81a0000201b0000781b0000121c000076590000785900007a5900007c5900007e59000080590000825900008459000086590000885900008a5900008c5900008e5900002e6400006a640000086500003065000000ca9a3b
+    m_ExpandedIDs: 00000000d0110000da13000024160000301600009816000054170000d2170000d0180000d8180000741900009e1a0000021b00009c1b0000ce1b0000ee1d0000f21d0000f41d00000c1e0000ba200000bc20000086210000c62100006022000076230000b6230000ac240000f6240000b025000036260000d8260000886500008a6500008c6500008e65000090650000926500009465000096650000986500009a6500009c6500009e650000a065000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
