@@ -36,12 +36,12 @@ MonoBehaviour:
   m_Name: Movie
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 66
+  take: 24
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
       m_Root: 0
-      m_Leaf: Recordings
+      m_Leaf: 
       m_ForceAssetFolder: 0
       m_AbsolutePath: 
     m_FileName: movie_<Take>

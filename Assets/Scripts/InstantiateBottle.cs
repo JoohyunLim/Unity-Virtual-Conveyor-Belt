@@ -81,8 +81,8 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Mug);
         Trash.Add(Plate_glass);
         Trash.Add(Plate_plastic);
-        //Trash.Add(Plate_metal);
-        //Trash.Add(Plate_wood);
+       // Trash.Add(Plate_metal);
+       // Trash.Add(Plate_wood);
         //Trash.Add(Plate_paper);
         Trash.Add(Book);
         Trash.Add(Spoon);
@@ -96,7 +96,7 @@ public class InstantiateBottle : MonoBehaviour
     void Update()
     {
         Timer -= Time.deltaTime;
-        int trashIndex = Random.Range(0, 19); // Random.Range(0,gamobject 종류의 수)**
+        int trashIndex = Random.Range(0, 19); // Random.Range(0,19gamobject 종류의 수)**
         float xpos = Random.Range(-0.2f, 0.2f);
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
