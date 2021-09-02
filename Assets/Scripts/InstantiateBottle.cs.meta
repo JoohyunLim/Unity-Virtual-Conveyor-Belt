@@ -8,6 +8,8 @@ MonoImporter:
       type: 3}
   - Bottle_labeled: {fileID: 7447981178503466546, guid: cd82b3ab18bb3c740a98375ca8091c61,
       type: 3}
+  - GlassBottle: {fileID: 4735634420419275997, guid: 767900e80333de149b8cd18eff264afe,
+      type: 3}
   - Can_pepsi: {fileID: 671088068444408973, guid: 031943c17d8fc8244b7d0943bfe29829,
       type: 3}
   - Can_beer: {fileID: 2059658100286980676, guid: f1d686608177bb74ea14519c89bf7a7a,

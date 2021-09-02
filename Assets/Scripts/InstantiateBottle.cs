@@ -7,6 +7,7 @@ public class InstantiateBottle : MonoBehaviour
 {
     public GameObject Bottle;
     public GameObject Bottle_labeled;
+    public GameObject GlassBottle;
 
     public GameObject Can_pepsi;
     public GameObject Can_beer;
@@ -50,7 +51,7 @@ public class InstantiateBottle : MonoBehaviour
         //앱 알림 #1: 컨베이어벨트 시작
         Data2.message = "컨베이어벨트 작동이 시작되었습니다.";
         Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
-
+         
 
         //서버로 시작 메세지 전송
         Bottles.Add(Bottle);
@@ -69,6 +70,7 @@ public class InstantiateBottle : MonoBehaviour
         
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);
+        Trash.Add(GlassBottle);
         Trash.Add(Can_pepsi);
         Trash.Add(Can_beer);
         Trash.Add(Can_fanta);
@@ -96,7 +98,7 @@ public class InstantiateBottle : MonoBehaviour
     void Update()
     {
         Timer -= Time.deltaTime;
-        int trashIndex = Random.Range(0, 19); // Random.Range(0,19gamobject 종류의 수)**
+        int trashIndex = Random.Range(0, 20); // Random.Range(0,19gamobject 종류의 수)**
         float xpos = Random.Range(-0.2f, 0.2f);
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
@@ -126,9 +128,14 @@ public class InstantiateBottle : MonoBehaviour
                         Instantiate(Book, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
-                    case 1:
-                        print("INPUT #" + inputNumber + " NEW BOTTLE!");
+                    case 20:
+                        print("INPUT #" + inputNumber + " NEW PLASTIC BOTTLE!");
                         Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                        break;
+
+                    case 21:
+                        print("INPUT #" + inputNumber + " NEW GLASS BOTTLE!");
+                        Instantiate(GlassBottle, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 2:
@@ -216,9 +223,18 @@ public class InstantiateBottle : MonoBehaviour
             }
             else
             {
-                //Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
-                Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);      
-
+                if(gameObject.scene.name == "glassPlateConveyor")
+                {
+                    Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);  
+                }
+                else if(gameObject.scene.name == "petConveyor")
+                {
+                    Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                }
+                else
+                {
+                    Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                }
             }
             Timer = 5f;
         }
