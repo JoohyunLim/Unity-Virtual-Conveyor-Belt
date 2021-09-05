@@ -5,13 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/glassPlateConveyor.unity
+    guid: 3d179caab1cdfb14bab014968b6b48f5
+  - enabled: 1
+    path: Assets/Scenes/petConveyor.unity
+    guid: 590949e8d8209634aa81f3e23167b0ac
   m_configObjects: {}

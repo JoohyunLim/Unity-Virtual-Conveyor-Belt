@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Box : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class Box : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
 
-        if (gameObject.scene.name == "glassPlateConveyor")
+        if (SceneManager.GetActiveScene().name == "glassPlateConveyor")
         {
             if (col.gameObject.tag == "Glassplate") //GlassPlate만 재활용
             {
@@ -30,7 +31,7 @@ public class Box : MonoBehaviour
                 col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
             }
         }
-        else if (gameObject.scene.name == "petConveyor") //Pet만 재활용
+        else if (SceneManager.GetActiveScene().name == "petConveyor") //Pet만 재활용
         {
             if (col.gameObject.tag == "Bottle")
             {

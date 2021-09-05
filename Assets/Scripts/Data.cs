@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Data : MonoBehaviour
 {
@@ -21,11 +22,11 @@ public class Data : MonoBehaviour
         InvokeRepeating("CountTime", 0.0f, 1.0f);
         InvokeRepeating("Status", 0.0f, 3.0f);
 
-        if (gameObject.scene.name == "glassPlateConveyor")
+        if (SceneManager.GetActiveScene().name == "glassPlateConveyor")
         {
            item = "GlassPlate";
         }
-        else if (gameObject.scene.name == "petConveyor")
+        else if (SceneManager.GetActiveScene().name == "petConveyor")
         {
             item = "Pet";
         } 
@@ -64,4 +65,4 @@ public class Data : MonoBehaviour
         uptime += 1;
     }
 
-}
+}  

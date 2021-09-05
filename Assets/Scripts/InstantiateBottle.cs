@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //쓰레기 자동 생성
 public class InstantiateBottle : MonoBehaviour
@@ -52,7 +53,6 @@ public class InstantiateBottle : MonoBehaviour
         Data2.message = "컨베이어벨트 작동이 시작되었습니다.";
         Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
          
-
         //서버로 시작 메세지 전송
         Bottles.Add(Bottle);
         Bottles.Add(Bottle_labeled);
@@ -66,8 +66,7 @@ public class InstantiateBottle : MonoBehaviour
         Plates.Add(Plate_paper);
         Plates.Add(Plate_metal);
         Plates.Add(Plate_wood);
-         
-        
+       
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);
         Trash.Add(GlassBottle);
@@ -92,8 +91,7 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Cream);
         Trash.Add(Straw);
         Trash.Add(etc);
-        
-    }
+        }
 
     void Update()
     {
@@ -105,12 +103,31 @@ public class InstantiateBottle : MonoBehaviour
         int plateIndex = Random.Range(0, 5);
          
         Quaternion qRotation = Quaternion.Euler(angle, angle, angle);
-
+        
         //error alarm test : 스페이스키 누르면 에러메세지 전송
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Data2.message = "컨베이어벨트에 오류가 발생했습니다.";
             Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
+        }
+
+        //숫자 누르면 씬 전환
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (SceneManager.GetActiveScene().name != "glassPlateConveyor")
+            {
+                print("GLASSPLATE CONVEYOR로 전환합니다.");
+                SceneManager.LoadScene("glassPlateConveyor");
+            }
+
+        } else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (SceneManager.GetActiveScene().name != "petConveyor")
+            {
+                print("PET CONVEYOR로 전환합니다.");
+                SceneManager.LoadScene("PetConveyor");
+            }
+
         }
 
 
@@ -223,11 +240,11 @@ public class InstantiateBottle : MonoBehaviour
             }
             else
             {
-                if(gameObject.scene.name == "glassPlateConveyor")
+                if(SceneManager.GetActiveScene().name == "glassPlateConveyor")
                 {
                     Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);  
                 }
-                else if(gameObject.scene.name == "petConveyor")
+                else if(SceneManager.GetActiveScene().name == "petConveyor")
                 {
                     Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
                 }
