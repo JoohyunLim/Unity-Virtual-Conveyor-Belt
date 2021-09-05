@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Box : MonoBehaviour
 {
@@ -18,12 +19,34 @@ public class Box : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Glassplate")
+
+        if (SceneManager.GetActiveScene().name == "glassPlateConveyor")
         {
-            col.gameObject.transform.position = new Vector3(Random.Range(0.2f, 0.25f), transform.position.y, -1.68f);
-        } else
-        {
-            col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
+            if (col.gameObject.tag == "Glassplate") //GlassPlate만 재활용
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(0.2f, 0.25f), transform.position.y, -1.68f);
+            }
+            else
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
+            }
         }
+        else if (SceneManager.GetActiveScene().name == "petConveyor") //Pet만 재활용
+        {
+            if (col.gameObject.tag == "Bottle")
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(0.2f, 0.25f), transform.position.y, -1.68f);
+            }
+            else
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
+            }
+        }
+        else //재활용X, 모두 이물질로 분류
+        {    
+                col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
+        }
+
+         
     }
 }

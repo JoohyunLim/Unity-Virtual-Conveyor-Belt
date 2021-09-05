@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //쓰레기 자동 생성
 public class InstantiateBottle : MonoBehaviour
 {
     public GameObject Bottle;
     public GameObject Bottle_labeled;
+    public GameObject GlassBottle;
 
     public GameObject Can_pepsi;
     public GameObject Can_beer;
@@ -50,8 +52,7 @@ public class InstantiateBottle : MonoBehaviour
         //앱 알림 #1: 컨베이어벨트 시작
         Data2.message = "컨베이어벨트 작동이 시작되었습니다.";
         Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
-
-
+         
         //서버로 시작 메세지 전송
         Bottles.Add(Bottle);
         Bottles.Add(Bottle_labeled);
@@ -65,10 +66,10 @@ public class InstantiateBottle : MonoBehaviour
         Plates.Add(Plate_paper);
         Plates.Add(Plate_metal);
         Plates.Add(Plate_wood);
-         
-        
+       
         Trash.Add(Bottle);
         Trash.Add(Bottle_labeled);
+        Trash.Add(GlassBottle);
         Trash.Add(Can_pepsi);
         Trash.Add(Can_beer);
         Trash.Add(Can_fanta);
@@ -81,8 +82,8 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Mug);
         Trash.Add(Plate_glass);
         Trash.Add(Plate_plastic);
-        //Trash.Add(Plate_metal);
-        //Trash.Add(Plate_wood);
+       // Trash.Add(Plate_metal);
+       // Trash.Add(Plate_wood);
         //Trash.Add(Plate_paper);
         Trash.Add(Book);
         Trash.Add(Spoon);
@@ -90,19 +91,44 @@ public class InstantiateBottle : MonoBehaviour
         Trash.Add(Cream);
         Trash.Add(Straw);
         Trash.Add(etc);
-        
-    }
+        }
 
     void Update()
     {
         Timer -= Time.deltaTime;
-        int trashIndex = Random.Range(0, 19); // Random.Range(0,gamobject 종류의 수)**
+        int trashIndex = Random.Range(0, 20); // Random.Range(0,19gamobject 종류의 수)**
         float xpos = Random.Range(-0.2f, 0.2f);
         float angle = Random.Range(-50f, 50f);
         int canIndex = Random.Range(0, 3);
         int plateIndex = Random.Range(0, 5);
          
         Quaternion qRotation = Quaternion.Euler(angle, angle, angle);
+        
+        //error alarm test : 스페이스키 누르면 에러메세지 전송
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Data2.message = "컨베이어벨트에 오류가 발생했습니다.";
+            Data2.occurationTime = System.DateTime.Now.ToString("h:mm:ss tt");
+        }
+
+        //숫자 누르면 씬 전환
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (SceneManager.GetActiveScene().name != "glassPlateConveyor")
+            {
+                print("GLASSPLATE CONVEYOR로 전환합니다.");
+                SceneManager.LoadScene("glassPlateConveyor");
+            }
+
+        } else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (SceneManager.GetActiveScene().name != "petConveyor")
+            {
+                print("PET CONVEYOR로 전환합니다.");
+                SceneManager.LoadScene("PetConveyor");
+            }
+
+        }
 
 
         if (Timer <= 0f)
@@ -119,9 +145,14 @@ public class InstantiateBottle : MonoBehaviour
                         Instantiate(Book, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
-                    case 1:
-                        print("INPUT #" + inputNumber + " NEW BOTTLE!");
+                    case 20:
+                        print("INPUT #" + inputNumber + " NEW PLASTIC BOTTLE!");
                         Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                        break;
+
+                    case 21:
+                        print("INPUT #" + inputNumber + " NEW GLASS BOTTLE!");
+                        Instantiate(GlassBottle, new Vector3(xpos, 1.3f, -7.0f), qRotation);
                         break;
 
                     case 2:
@@ -209,9 +240,18 @@ public class InstantiateBottle : MonoBehaviour
             }
             else
             {
-                //Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
-                Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);      
-
+                if(SceneManager.GetActiveScene().name == "glassPlateConveyor")
+                {
+                    Instantiate(Plates[0], new Vector3(xpos, 1.3f, -7.0f), qRotation);  
+                }
+                else if(SceneManager.GetActiveScene().name == "petConveyor")
+                {
+                    Instantiate(Bottles[1], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                }
+                else
+                {
+                    Instantiate(Trash[trashIndex], new Vector3(xpos, 1.3f, -7.0f), qRotation);
+                }
             }
             Timer = 5f;
         }
