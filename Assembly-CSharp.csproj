@@ -63,11 +63,11 @@
      <Compile Include="Assets\PhysicsConveyorAsset\Scripts\ConveyorBehavior.cs" />
      <Compile Include="Assets\PhysicsConveyorAsset\Scripts\RigidbodySmoothRegion.cs" />
      <Compile Include="Assets\PhysicsConveyorAsset\Scripts\RollerBehavior.cs" />
-     <Compile Include="Assets\Prefabs\trash\enterBin.cs" />
      <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\ConveyorBelt.cs" />
      <Compile Include="Assets\Scripts\Data.cs" />
      <Compile Include="Assets\Scripts\Data2.cs" />
+     <Compile Include="Assets\Scripts\enterBin.cs" />
      <Compile Include="Assets\Scripts\InstantiateBottle.cs" />
      <Compile Include="Assets\Scripts\jsonClass.cs" />
      <Compile Include="Assets\Scripts\jsonClass2.cs" />

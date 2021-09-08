@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//컨베이어벨트 오류알림
 public class Data2 : MonoBehaviour
 {
     public string eventName = "getError";
