@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//컨베이어벨트 현황
 public class Data : MonoBehaviour
 {
 
@@ -16,7 +17,7 @@ public class Data : MonoBehaviour
     public static string status;
     jsonClass myData = new jsonClass();
 
-    // Start is called before the first frame update
+
     void Start()
     {
         InvokeRepeating("CountTime", 0.0f, 1.0f);
@@ -36,8 +37,7 @@ public class Data : MonoBehaviour
         }
 
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         myData.item = item;
