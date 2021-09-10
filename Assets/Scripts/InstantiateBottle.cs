@@ -118,6 +118,7 @@ public class InstantiateBottle : MonoBehaviour
             {
                 print("GLASSPLATE CONVEYOR로 전환합니다.");
                 SceneManager.LoadScene("glassPlateConveyor");
+              
             }
 
         } else if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -126,6 +127,7 @@ public class InstantiateBottle : MonoBehaviour
             {
                 print("PET CONVEYOR로 전환합니다.");
                 SceneManager.LoadScene("PetConveyor");
+                
             }
 
         }

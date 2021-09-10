@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class Data : MonoBehaviour
 {
 
-    public string item = ""; //컨베이어벨트 종류
-    public int uptime = 0; //컨베이어 가동 시간
+    public static string item = ""; //컨베이어벨트 종류
+    public static int uptime = 0; //컨베이어 가동 시간
     public static int inputTrash = 0; //배출되는 모든 쓰레기의 수 
     public static int recyclingTrash = 0; //재활용되는 쓰레기의 수
     public static float recyclingRate = 0.0f; //재활용률
@@ -25,15 +25,18 @@ public class Data : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "glassPlateConveyor")
         {
-           item = "GlassPlate";
+            ResetData();
+            item = "GlassPlate";  
         }
         else if (SceneManager.GetActiveScene().name == "petConveyor")
         {
+            ResetData();
             item = "Pet";
         } 
         else
         {
-           item = "None";
+            ResetData();
+            item = "None";
         }
 
     }
@@ -64,5 +67,14 @@ public class Data : MonoBehaviour
     {
         uptime += 1;
     }
+
+    void ResetData()
+    {
+        item = ""; //컨베이어벨트 종류
+        uptime = 0; //컨베이어 가동 시간
+        inputTrash = 0; //배출되는 모든 쓰레기의 수 
+        recyclingTrash = 0; //재활용되는 쓰레기의 수
+        recyclingRate = 0.0f; //재활용률
+}
 
 }  
