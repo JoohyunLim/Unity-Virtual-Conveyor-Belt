@@ -11,6 +11,7 @@ TagManager:
   - Glassplate
   - paperplate
   - plasticplate
+  - metalSpoon
   layers:
   - Default
   - TransparentFX

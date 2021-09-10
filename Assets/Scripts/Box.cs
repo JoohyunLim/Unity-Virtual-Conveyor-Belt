@@ -42,6 +42,17 @@ public class Box : MonoBehaviour
                 col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
             }
         }
+        else if (SceneManager.GetActiveScene().name == "metalSpoonConveyor") //Pet만 재활용
+        {
+            if (col.gameObject.tag == "metalSpoon")
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(0.2f, 0.25f), transform.position.y, -1.68f);
+            }
+            else
+            {
+                col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
+            }
+        }
         else //재활용X, 모두 이물질로 분류
         {    
                 col.gameObject.transform.position = new Vector3(Random.Range(-0.25f, -0.2f), transform.position.y, -1.68f);
