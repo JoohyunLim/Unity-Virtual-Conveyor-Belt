@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/petConveyor.unity
     guid: 590949e8d8209634aa81f3e23167b0ac
+  - enabled: 1
+    path: Assets/Scenes/metalSpoonConveyor.unity
+    guid: 380794729c7fd0549bc5799a270bcd3c
   m_configObjects: {}

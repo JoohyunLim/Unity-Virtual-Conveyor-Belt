@@ -32,7 +32,12 @@ public class Data : MonoBehaviour
         {
             ResetData();
             item = "Pet";
-        } 
+        }
+        else if (SceneManager.GetActiveScene().name == "metalSpoonConveyor")
+        {
+            ResetData();
+            item = "MetalSpoon";
+        }
         else
         {
             ResetData();
