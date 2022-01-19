@@ -11,18 +11,18 @@ https://www.youtube.com/watch?v=f2Fym_h2EWw
 > * <b>YOLO custom 모델 학습</b><br>
 폐기물 분류에 적합한 class들을 선정하여 본 프로젝트의 목적에 맞는 YOLOv4 모델을 학습시켰다.
 
-> * <b>Unity 가상 컨베이어벨트</b> <br>
-최근 주목받고 있는 디지털트윈 기술을 활용해 실제 선별장과 동일한 환경을 Unity 가상 환경에 제작하여 다양한 시뮬레이션을 진행하였고, 이 과정에서 본 기술을 실제 현장에 도입했을 때 발생할 수 있는 크고 작은 문제 상황들에 대해 파악하였다.
-<br>
-<p align="center">
-<img src = "https://user-images.githubusercontent.com/78129187/150169683-e10845bd-bb4d-483e-a7cd-d4694ddefb29.jpg" width="60%">
-</p><br>
-
 > * <b>빛 반사율 및 무게를 활용한 재질 판단 알고리즘</b> <br>
 암실 환경에 조명을 설치해두고, 물체를 넣었을 때 물체가 빛을 반사해내는 정도를 활용하여 재질을 판단하였다. (조명으로 명확한 판별이 불가능할 경우 무게 기반의 분류 알고리즘도 도입함)
 <br>
 <p align="center">
 <img src = "https://user-images.githubusercontent.com/78129187/150170429-6a7a0ad4-7adc-48aa-839b-69bb0ea7094a.png" width="60%">
+</p><br>
+
+> * <b>Unity 가상 컨베이어벨트</b> <br>
+최근 주목받고 있는 디지털트윈 기술을 활용해 실제 선별장과 동일한 환경을 Unity 가상 환경에 제작하여 다양한 시뮬레이션을 진행하였고, 이 과정에서 본 기술을 실제 현장에 도입했을 때 발생할 수 있는 크고 작은 문제 상황들에 대해 파악하였다.
+<br>
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/78129187/150169683-e10845bd-bb4d-483e-a7cd-d4694ddefb29.jpg" width="60%">
 </p><br>
 
 > * <b>웹 & 앱서비스</b> <br>
