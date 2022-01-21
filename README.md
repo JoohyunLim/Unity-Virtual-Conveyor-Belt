@@ -31,3 +31,11 @@ https://www.youtube.com/watch?v=f2Fym_h2EWw
 <p align="center">
 <img src = "https://user-images.githubusercontent.com/78129187/150173054-2a0a59ab-3f65-4247-a17a-99bbd980b9d7.png" width="60%">
 </p><br>
+<br>
+✔ 웹서비스 github
+<br>
+https://github.com/Jungchaeyeon/VirtualTrashCollectionConveyorbelt
+<br><br>
+✔ 재질판별 알고리즘 github
+<br>
+https://github.com/kim474/openCV_python
